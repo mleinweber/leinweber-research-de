@@ -4,17 +4,41 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<script>
-	"use strict";
-		$(document).ready(function () {
-			$('#inputData').on('keyup', function () {
-				var t = $(this).val();
-				var o = "";
-				for (var i = 0; i < t.length; i++)
-					o += t.charCodeAt(i);
-				$('#outputData').val(o);
-			});
-		});
+	'use strict';
+	$(document).ready(function () {
+		$('#inputData').on('keyup', process);
+		$('.convProp').change(process);
+	});
+	function process() {
+		var input = $('#inputData').val();
+		var output = "";
+		var outputFormat = $('#ddlOutput').val()
+		for (var i = 0; i < input.length; i++) {
+			var cc = input.charCodeAt(i);
+			if(outputFormat == 'dec')
+				output += cc;
+			else if (outputFormat == 'bool')
+				output += cc.toString(2);
+			else if (outputFormat == 'hex')
+				output += cc.toString(16);
+			if ($('#cbSpaces')[0].checked)
+				output += " ";
+		}
+		if (output.substr(output.length - 1) == " ")
+			output = output.substr(0, output.length - 1)
+		$('#outputData').val(output);
+	}
 	</script>
 	<input id="inputData" type="text" value="" size="10" placeholder="input" />
-	<input id="outputData" type="text" value="" size="10" placeholder="output" />
+	<select id="ddlInput" class="convProp">
+		<option value="0">Unicode</option>
+	</select>
+	<br />
+	<input id="outputData" type="text" value="" size="10" placeholder="output" readonly/>
+	<select id="ddlOutput" class="convProp">
+		<option value="bool">Binary</option>
+		<option value="dec">Decimal</option>
+		<option value="hex" selected="selected">Hex</option>
+	</select>
+	<input id="cbSpaces" class="convProp" type="checkbox">Seperate with spaces<br>
 </asp:Content>

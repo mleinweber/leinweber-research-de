@@ -12,18 +12,15 @@
 				$('#c2').val($('#a3').val() + '*' + checkParentheses($('#b1').val()) + '-' + checkParentheses($('#a1').val()) + '*' + checkParentheses($('#b3').val()));
 				$('#c3').val($('#a1').val() + '*' + checkParentheses($('#b2').val()) + '-' + checkParentheses($('#a2').val()) + '*' + checkParentheses($('#b1').val()));
 				try {
-					d1 = eval($('#c1').val());
-					d2 = eval($('#c2').val());
-					d3 = eval($('#c3').val());
+					$('#d1').val(eval($('#c1').val()));
+					$('#d2').val(eval($('#c2').val()));
+					$('#d3').val(eval($('#c3').val()));
 				}
 				catch (err) {
-					d1 = NaN;
-					d2 = NaN;
-					d3 = NaN;
+					$('#d1').val("NaN");
+					$('#d2').val("NaN");
+					$('#d3').val("NaN");
 				}
-				$('#d1').val(d1);
-				$('#d2').val(d2);
-				$('#d3').val(d3);
 			});
 		});
 		function  checkParentheses(s){return s > 0 ? s : "(" + s + ")";}
