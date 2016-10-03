@@ -17,8 +17,6 @@
 				<td><a href="../index.aspx">Startseite</a></td>
 				<td><a href="/lia/index.aspx">Lineare Algebra</a></td>
 				<td><a href="/converter/index.aspx">Konverter</a></td>
-<%--			<td><a href="url">Analysis</a></td>
-				<td><a href="url">Geometrie</a></td>--%>
 			</tr>
 		</table>
 	</div>
@@ -26,7 +24,6 @@
 	<form id="form1" runat="server">
 	<div id="siteContentDiv">
 		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-		 <%-- Content --%>
 		</asp:ContentPlaceHolder>
 	</div>
 	</form>
