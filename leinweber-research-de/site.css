@@ -1,0 +1,28 @@
+﻿#divMaster
+{
+	font-size:2.5em;
+	background-color:darkblue;
+	color:whitesmoke;
+	padding-left: 15px;
+}
+
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+#MenuTable td
+{
+	font-size:1.3em;
+	padding: 15px 100px 15px;
+}
+#MenuTable td:hover
+{
+	background-color:#8585ad;
+}
+
+#siteContentDiv
+{
+    margin-left: 25px;
+}
