@@ -63,6 +63,7 @@
     <Content Include="converter\index.aspx" />
     <Content Include="index.aspx" />
     <Content Include="lia\index.aspx" />
+    <Content Include="primes.aspx" />
     <Content Include="scripts\jquery-2.2.3.js" />
     <Content Include="scripts\jquery-2.2.3.min.js" />
     <Content Include="site.css" />
@@ -91,6 +92,13 @@
     </Compile>
     <Compile Include="lia\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="primes.aspx.cs">
+      <DependentUpon>primes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="primes.aspx.designer.cs">
+      <DependentUpon>primes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
