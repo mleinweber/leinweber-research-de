@@ -27,14 +27,20 @@
 		if (output.substr(output.length - 1) == " ")
 			output = output.substr(0, output.length - 1)
 		$('#outputData').val(output);
-	}
+		}
+		function escapeRegExp(str) {
+			return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+		}
+		function replaceAll(str, find, replace) {
+			return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+		}
 	</script>
-	<input id="inputData" type="text" value="" size="10" placeholder="input" />
+	<textarea  id="inputData" placeholder="input" rows="10" cols="100"></textarea>
 	<select id="ddlInput" class="convProp">
 		<option value="0">Unicode</option>
 	</select>
 	<br />
-	<input id="outputData" type="text" value="" size="10" placeholder="output" readonly/>
+	<textarea  id="outputData"  placeholder="output" rows="10" cols="100"></textarea>
 	<select id="ddlOutput" class="convProp">
 		<option value="bool">Binary</option>
 		<option value="dec">Decimal</option>

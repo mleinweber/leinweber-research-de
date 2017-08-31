@@ -11,7 +11,7 @@ namespace leinweber_research_de.converter
 {
 
 
-    public partial class index
-    {
-    }
+	public partial class index
+	{
+	}
 }
