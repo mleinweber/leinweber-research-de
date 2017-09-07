@@ -3,5 +3,5 @@
 	 <title>Home | LeinweberResearch.de</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	index content 42
+	<p>Hello</p>
 </asp:Content>

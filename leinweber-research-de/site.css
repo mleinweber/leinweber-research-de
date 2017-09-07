@@ -26,3 +26,32 @@ a
 {
 	margin-left: 25px;
 }
+
+.wrapper
+{
+	clear: both;
+}
+
+.leftDiv
+{
+	width: 50%;
+	float: left;
+	min-width: 750px;
+}
+
+.rightDiv
+{
+	width: 50%;
+	float: left;
+}
+
+#asciiTable td
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#asciiTable td:hover
+{
+	background-color: lightgray;
+}
