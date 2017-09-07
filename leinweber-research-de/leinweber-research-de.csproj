@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="converter\index.aspx" />
+    <Content Include="dump.aspx" />
     <Content Include="index.aspx" />
     <Content Include="lia\index.aspx" />
     <Content Include="primes.aspx" />
@@ -78,6 +80,13 @@
     </Compile>
     <Compile Include="converter\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dump.aspx.cs">
+      <DependentUpon>dump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dump.aspx.designer.cs">
+      <DependentUpon>dump.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
