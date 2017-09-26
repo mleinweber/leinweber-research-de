@@ -27,5 +27,8 @@
 		</asp:ContentPlaceHolder>
 	</div>
 	</form>
+	<footer>
+		<p>This site on <a href="https://github.com/mleinweber/leinweber-research-de">GitHub</a>.</p>
+	</footer>
 </body>
 </html>

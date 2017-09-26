@@ -3,5 +3,5 @@
 	 <title>Home | LeinweberResearch.de</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<p>Hello</p>
+	<p>Hello Friend.</p>
 </asp:Content>
